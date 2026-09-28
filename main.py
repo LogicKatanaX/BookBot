@@ -1,5 +1,7 @@
 import sys
-from stats import get_book_text,counts,chars_dict_to_sorted_list
+from stats import chars_dict_to_sorted_list, counts, get_book_text
+
+
 def print_report(book_path, word_count, sorted_chars):
     # Header
     print("============ BOOKBOT ============")
@@ -32,7 +34,9 @@ def main():
 
     print_report(book_path, len(words), sorted_chars)
 
-main()
+
+if __name__ == "__main__":
+    main()
 
 
 
